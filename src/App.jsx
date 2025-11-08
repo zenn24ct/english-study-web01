@@ -216,6 +216,8 @@ const WORDS = [
   { word: "emerge", meaning: "現れる、浮かび上がる" },
   { word: "emphasize", meaning: "強調する" },
   // ... (remaining words omitted for brevity in this preview; full list included in the distributed project)
+  //どんどん追加する！！！
+  
 ];
 
 // Utility shuffle
@@ -304,12 +306,13 @@ export default function App(){
         ): <div>No words available</div>}
       </div>
 
-      <div style={{marginTop:12}} className="card">
+      {/* <div style={{marginTop:12}} className="card">
         <h3 style={{marginTop:0}}>About</h3>
         <p style={{marginBottom:6}}>This project is a starting point. To run:</p>
         <pre style={{background:'#f9fafb',padding:8,borderRadius:6}}>npm install
 npm run dev</pre>
-      </div>
+      </div> */}
+      {/* ここは一旦消す */}
     </div>
   );
 }
