@@ -1,13 +1,25 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>TOEIC Study App</title>
-    <script type="module" crossorigin src="/assets/index-CHwq2Y3N.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CNeRLhZ7.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>TOEIC Study (Debug)</title>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- React + ReactDOM from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel standalone to transpile JSX in browser (only for quick debug) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- App content as inline JSX (or load a .jsx file via fetch and eval — more work) -->
+    <script type="text/babel">
+      const App = () => <div>Hello (Babel in browser)</div>;
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
   </body>
 </html>
