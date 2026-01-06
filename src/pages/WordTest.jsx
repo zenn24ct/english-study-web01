@@ -3,8 +3,8 @@ import React from 'react';
 const WordTest = () => {
   return (
     <div>
-      <h1>単語テスト</h1>
-      <p>ここに単語テストが表示されます。</p>
+      <h1>追加情報</h1>
+      <p>ここに追加で色々追加します。</p>
     </div>
   );
 };
